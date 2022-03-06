@@ -1,0 +1,42 @@
+.overlay
+    display: none
+    position: fixed
+    top: 0
+    height: 100%
+    width: 100%
+    background: rgba(0, 0, 0, 0.4)
+    mix-blend-mode: normal
+.modal
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 380px
+    min-height: 400px
+    background: #F2F2F2
+    padding: 40px 40px 40px 40px
+    &__close
+        position: absolute
+        font-size: 40px
+        line-height: 20px
+        left: 400px
+        top: 0
+        color: $main-color
+        cursor: pointer
+    &__subtitle
+        font-weight: 700
+        font-size: 18px
+        line-height: 18px
+        text-align: center
+        color: #0D0D0D
+    &__descr
+        margin-top: 10px
+        font-weight: 700
+        font-size: 14px
+        line-height: 21px
+        text-align: center
+        color: #0D0D0D
+    &_mini
+        min-height: 140px
+#consultation, #order, #thanks
+    display: none

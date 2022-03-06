@@ -5,8 +5,15 @@
         width: 750px
         height: 580px
         margin: 0 auto
-    .slick-prev,
-    .slick-next
+        transition: 0.9s all
+    &__slide
+        height: 100%
+        display: none
+        align-items: center
+        &_active
+            display: flex
+    &__slide-prev,
+    &__slide-next
         position: absolute
         border: none
         background: #fff
@@ -16,6 +23,7 @@
         img
             width: 31px
             height: 50px
-    .slick-next
+    &__slide-next
         left: 815px
+
 

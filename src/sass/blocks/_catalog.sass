@@ -1,0 +1,144 @@
+.catalog
+    padding-bottom: 60px
+    &__tabs
+        margin: 46px 0 0 0
+        list-style-type: none
+        padding: 0
+        display: flex
+        justify-content: center
+    &__tab
+        width: 222px
+        height: 52px
+        left: 211px
+        background: rgba(0, 0, 0, 0.0001)
+        border: 2px solid #D0D0D0
+        font-weight: 500
+        font-size: 18px
+        line-height: 50px
+        text-align: center
+        text-transform: uppercase
+        color: #6B6B6B
+        transform: skewX(-30deg)
+        margin: 0 5px
+        cursor: pointer
+        transition: 0.2s all
+        &:hover
+            border: none
+            box-shadow: 1px 1px 10px $main-color
+        div
+            transform: skewX(30deg)
+        &_active
+            background: $main-color
+            color: #fff
+            border: none
+    &__cards
+        margin-top: 57px
+        display: none
+        flex-wrap: wrap
+        justify-content: center
+        &_active
+            display: flex
+    &__item
+        width: 303px
+        min-height: 442px
+        border: 2px solid #E8E8E8
+        padding: 20px
+        overflow: hidden
+        margin-right: 17px
+        margin-bottom: 20px
+    &__item:nth-child(3n)
+        margin-right: 0
+    &__img
+        display: block
+        margin: 0 auto
+        max-width: 100%
+        height: 200px
+    &__subtitle
+        margin-top: 15px
+        font-weight: 700
+        font-size: 16px
+        line-height: 25px
+        text-align: center
+        color: #0D0D0D
+    &__descr
+        margin-top: 15px
+        font-weight: 300
+        font-size: 14px
+        line-height: 22px
+        text-align: center
+        color: #0D0D0D
+    &__link
+        display: block
+        margin-top: 10px
+        font-weight: 500
+        font-size: 14px
+        text-align: center
+        text-decoration-line: underline
+        text-transform: uppercase
+        color: $main-color
+        &:hover
+            color: $main-color
+    &__line
+        margin: 17px 0
+        background: #E8E8E8
+        height: 2px
+    &__footer
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__old-price
+        font-weight: 300
+        font-size: 14px
+        text-decoration-line: line-through
+        color: #555555
+    &__new-price
+        font-weight: 900
+        font-size: 20px
+        align-items: flex-end
+        color: #050505
+    &__wrapper
+        display: flex
+        width: calc(200% + 40px)
+    &__content
+        width: 50%
+        margin-right: 0
+        transform: translateX(-100%)
+        transition: 0.5s all
+        &_active
+            transform: translateX(0%)
+            margin-right: 20px
+    &__list
+        position: relative
+        width: 50%
+        margin-left: 20px
+        transform: translateX(0%)
+        transition: 0.5s all
+        padding-left: 12px
+        padding-right: 20px
+        ul
+            padding: 0
+            margin-bottom: 0
+            list-style-type: none
+        &_active
+            margin-left: 0
+            transform: translateX(-100%)
+        .catalog__link
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(calc(-50% - 12px))
+        li
+            position: relative
+            font-weight: 300
+            font-size: 14px
+            line-height: 21px
+            color: #555555
+            margin-bottom: 5px
+            &::before
+                content: ""
+                position: absolute
+                width: 5px
+                height: 5px
+                background: $main-color
+                left: -12px
+                top: 7px
